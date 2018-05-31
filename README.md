@@ -1,7 +1,6 @@
 # vpnsurf
 VpnSurf
 
-VpnSurf
 Vpnsurf will anonymize the entire system under OpenVPN using VpnBOOK Server(designed with the latest technologies and most advanced cryptographic techniques to keep you safe on the internet from prying eyes and hackers).
 
 Required: openvpn installed
