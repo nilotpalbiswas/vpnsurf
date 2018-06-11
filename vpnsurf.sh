@@ -18,6 +18,7 @@ NC='\033[0m'
 function s1 {
 echo -e "$GREEN""Downloading server configuration..$RESETCOLOR"
 wget -q --no-check-certificate https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-Euro1.zip -O openvpnn.zip
+rm -rf d
 mkdir d
 unzip openvpnn.zip -d d >/dev/null 2>&1
 rm openvpnn.zip
@@ -38,6 +39,7 @@ rm pass.txt
 function s2 {
 echo -e "$GREEN""Downloading server configuration..$RESETCOLOR"
 wget -q --no-check-certificate https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-Euro1.zip -O openvpnn.zip
+rm -rf d
 mkdir d
 unzip openvpnn.zip -d d >/dev/null 2>&1
 rm openvpnn.zip
@@ -60,6 +62,7 @@ rm pass.txt
 function s3 {
 echo -e "$GREEN""Downloading server configuration..$RESETCOLOR"
 wget -q --no-check-certificate https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-Euro2.zip -O openvpnn.zip
+rm -rf d
 mkdir d
 unzip openvpnn.zip -d d >/dev/null 2>&1
 rm openvpnn.zip
@@ -80,6 +83,7 @@ rm pass.txt
 function s4 {
 echo -e "$GREEN""Downloading server configuration..$RESETCOLOR"
 wget -q --no-check-certificate https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-Euro2.zip -O openvpnn.zip
+rm -rf d
 mkdir d
 unzip openvpnn.zip -d d >/dev/null 2>&1
 rm openvpnn.zip
@@ -102,6 +106,7 @@ rm pass.txt
 function s5 {
 echo -e "$GREEN""Downloading server configuration..$RESETCOLOR"
 wget -q --no-check-certificate https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-US1.zip -O openvpnn.zip
+rm -rf d
 mkdir d
 unzip openvpnn.zip -d d >/dev/null 2>&1
 rm openvpnn.zip
@@ -122,6 +127,7 @@ rm pass.txt
 function s6 {
 echo -e "$GREEN""Downloading server configuration..$RESETCOLOR"
 wget -q --no-check-certificate https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-US1.zip -O openvpnn.zip
+rm -rf d
 mkdir d
 unzip openvpnn.zip -d d >/dev/null 2>&1
 rm openvpnn.zip
@@ -144,6 +150,7 @@ rm pass.txt
 function s7 {
 echo -e "$GREEN""Downloading server configuration..$RESETCOLOR"
 wget -q --no-check-certificate https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-US2.zip -O openvpnn.zip
+rm -rf d
 mkdir d
 unzip openvpnn.zip -d d >/dev/null 2>&1
 rm openvpnn.zip
@@ -164,6 +171,7 @@ rm pass.txt
 function s8 {
 echo -e "$GREEN""Downloading server configuration..$RESETCOLOR"
 wget -q --no-check-certificate https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-US2.zip -O openvpnn.zip
+rm -rf d
 mkdir d
 unzip openvpnn.zip -d d >/dev/null 2>&1
 rm openvpnn.zip
@@ -186,6 +194,7 @@ rm pass.txt
 function s9 {
 echo -e "$GREEN""Downloading server configuration..$RESETCOLOR"
 wget -q --no-check-certificate https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-CA1.zip -O openvpnn.zip
+rm -rf d
 mkdir d
 unzip openvpnn.zip -d d >/dev/null 2>&1
 rm openvpnn.zip
@@ -206,6 +215,7 @@ rm pass.txt
 function s10 {
 echo -e "$GREEN""Downloading server configuration..$RESETCOLOR"
 wget -q --no-check-certificate https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-CA1.zip -O openvpnn.zip
+rm -rf d
 mkdir d
 unzip openvpnn.zip -d d >/dev/null 2>&1
 rm openvpnn.zip
@@ -256,41 +266,42 @@ case "$1" in
       sx
       s2
 	;;
-4)
+3)
       sx
       s3
 	;;
-5)
+4)
       sx
       s4
 	;;
-7)
+5)
       sx
       s5
 	;;
-8)
+6)
       sx
       s6
 	;;
-10)
+7)
       sx
       s7
 	;;
-11)
+8)
       sx
       s8
 	;;
-13)
+9)
       sx
       s9
 	;;
-14)
+10)
       sx
       s10
 	;;
    *)
 
 killall openvpn
+rm -rf d
 #clear
 reset
 echo -e "
